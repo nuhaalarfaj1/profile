@@ -9,59 +9,146 @@
 
   </head>
 
+<body>
+  
 
 
-  <body>
+  <div class="box-main">
+
+      
+    <form action="index.html" method="post" id="newProfile">
+      <h1 id="header">Create Your Profile
+      </h1>
+      <h1></h1>
+      <!-- USER NAME -->
+      <div class="float-label">
+        <input type="text" name="f-name" value="" id="userName" placeholder="Name">
+      </div>
+      <br>
+
+      <!-- PASSWORD -->
+      <div class="float-label">
+        <input type="text" name="" value="" placeholder="Password" id="userPassword">
+      </div>
+      <br>
+
+      <!-- EMAIL ADDRESS -->
+      <div class="float-label">
+        <input type="text" name="f-name" value="" id="userEmail" placeholder="email address">
+      </div>
+      <br>
+
+     <div class='row'>
+       <!-- GENDER -->
+       <div class=" gender">
+         <div class="gender-title">
+           <label for="gender" class="title">Gender:</label>
+         </div>
+         <div class="radio">
+           <label class="radio-inline">
+             <input type="radio" name="inlineRadioOptions"  value="Male" class="option-input userGender" checked>
+             <span>Male</span>
+           </label>
+           <label class="radio-inline">
+             <input type="radio" name="inlineRadioOptions" value="Female" class="option-input userGender">
+             <span>Female</span>
+           </label>
+         </div>
+       </div>
+     </div>
 
 
-<form action="index.html" method="post" id="newProfile">
-<h1 id="header">Create Your Profile</h1>
+     <!-- BIRTHDAY -->
+     <div class="row birthday">
+       <div class="gender-title">
+         <label for="birthday" class="title">Birthday:</label>
+       </div>
+       <div class="float-label select">
+           <select name="Month" id="month">
+             <option value="" class="userMonth dateColor">Month</option>
+           </select>
+
+           <select name="Day" id="day">
+             <option value="" class="userDay dateColor">Day</option>
+           </select>
+
+           <select name="Year" id="year">
+             <option value="" class="userYear dateColor">Year</option>
+             </optgroup>
+           </select>
+
+         </div>
+       </div>
+
+
+      <button type="button" name="button" id="sendData">Create</button>
+      <p></p>
+
+      <p class="message"><button type="button" name="button" id=""></button> </p>
+
+
+    </form>
+
+
+      <div id="oldProfile">
+        <form action="index.html" method="post" id="oldList">
+          <h1> .</h1>
+          <h1></h1>
+          <div class="float-label">
+            <input type="text" name="" value="" placeholder="Username" id="oldName">
+          </div>
+          <br>
+
+    
+          <div class="float-label">
+            <input type="text" name="" value="" placeholder="Password" id="oldPwd">
+          </div>
+
+          <button type="button" name="button" id="sendData2"></button>
+          <p></p>
+
+          <p class="message"><button type="button" name="button" id="create">&nbsp;Create an account</button> </p>
+
+        </form>
+      </div>
+
+      
+      <div id="updateProfile" class="row">
+
+        
+        <div class="col-md-4 user-left">
+          <h1 id="updateName"></h1>
+          <p id="updateAge"></p>
+        </div>
+
        
-<div class="float-label">
-<input type="text" name="f-name" value="" id="userName" placeholder="Name">
-</div>
+ <div class="col-md-8 user-right">
+<h2>Profile <span>Info</span></h2>
+<div class="user-info">
+ <table>
+<tr>
+ <td><p>email address : </p> </td>
+ <td><p id="updateEmail"></p></td>
+ </tr>
+ <tr>
+<td><p>gender :</p></td>
+   <td><p id="updateGender"></p></td>
+</tr>
+<tr>
+ <td><p>birthday: </p></td>
+  <td><p id="updateBirth"></p></td>
+ </tr>
+
+
+  </table>
+  </div>
+ </div>
 <br>
+ <button type="button" name="button" id="signOut">&nbsp;Sign out</button> </p>
 
-<div class="float-label">
-<input type="text" name="" value="" placeholder="Password" id="userPassword">
- </div>
- <br>
-
- <div class="float-label">
-<input type="text" name="f-name" value="" id="userEmail" placeholder="Email address">
-</div>
- <br>
- <div class="float-label">
-    <input type="text" name="number" value="" id="number" placeholder="Phone Number">
+  </div>
+      </div>
     </div>
-     <br>
-
-  <div class='row'>
-<div class=" gender">
-<div class="gender-title">
-<label for="gender" class="title">Gender:</label>
-</div>
-<div class="radio">
-<label class="radio-inline">
-<input type="radio" name="inlineRadioOptions"  value="Male" class="option-input userGender" checked>
-<span>Male</span>
-</label>
-<label class="radio-inline">
-<input type="radio" name="inlineRadioOptions" value="Female" class="option-input userGender">
-<span>Female</span>
-</label>
- </div>
-</div>
-</div>
-
-
-       
-
-
-
- <button type="button" name="button">Create</button>
-  <p></p>
-
 
       
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
